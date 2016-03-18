@@ -15,7 +15,7 @@ In this lab, you are asked to clean the graffiti tags off the wall by making use
 
 For example for "tag-1" the developer tools reveal that the style applying the graffiti here is:
 
-```css
+```
 .tag-1 {
   background: url(../images/tag-1.png) no-repeat;
   z-index: 7;
@@ -25,7 +25,7 @@ For example for "tag-1" the developer tools reveal that the style applying the g
 
 We need to override this and set its display to `display: none;` instead. We can do this by writing a selector statement that is more specific such as:
 
-```css
+```
 #wall .tag-1 {
   display: none;
 }
@@ -34,8 +34,6 @@ We need to override this and set its display to `display: none;` instead. We can
 This selects elements with a class of "tag-1" that happen to also be inside an element with an id of "wall". This is more specific and therefore will override the previous statement and hide the graffiti. For more info on how specificity in CSS works take a look at: [Smashing Magazines What you Need to Know About CSS Specificity](http://www.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/).
 
 Work your way through all seven graffiti pictures until the wall is fully clean. Do not use the CSS `!important` value as it is considered a bad practice! Also avoid adding inline or embedded CSS to the index.html file, or by adding any additional class or id attributes to the index.html file either! This will make it more challenging as you will have to write CSS that is more specific based on the existing markup.
-
-After you finish, make sure you <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">install Firefox</a> if you haven't already as it is required for the screenshot tests to run. Then, type `learn` command from Terminal to run local tests.
 
 ## Resources
 
